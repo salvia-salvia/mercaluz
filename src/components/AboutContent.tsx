@@ -1,0 +1,43 @@
+import { useTranslations } from "next-intl";
+import Image from "next/image";
+import Link from "next/link";
+
+export default function AboutContent() {
+  const t = useTranslations("smallAbout");
+  return (
+    <section
+      id="about"
+      className=" flex gap-20  items-center min-h-screen py-20 px-6"
+    >
+      <Image
+        src={`/img/map.png`}
+        className="hidden lg:block w-[400px] xl:w-[600px]"
+        alt="about"
+        width={600}
+        height={400}
+      />
+      <div className="max-w-2xl md:pl-7">
+        <h2 className="text-xl sm:text-3xl 2xl:text-5xl  font-semibold mb-6  text-gray-800">
+          {t("title")}
+        </h2>
+        <p className="text-gray-600 md:text-lg leading-relaxed">
+          {t("part1")}
+          <br />
+          <br />
+          {t("part2")}
+          <br />
+          <br />
+          {t("part3")}
+        </p>
+        <Link href={`/about`}>
+          <button className="relative mt-8 inline-block cursor-pointer px-6 py-2 border border-[#34699a] text-[#34699a] font-medium overflow-hidden group">
+            <span className="absolute left-0 top-1/2 w-full h-0 bg-[#34699a] z-0 transition-all duration-300 ease-out group-hover:h-full transform -translate-y-1/2"></span>
+            <span className="relative z-10 group-hover:text-white transition-colors duration-300">
+              {t("LearnMore")}
+            </span>
+          </button>
+        </Link>
+      </div>
+    </section>
+  );
+}

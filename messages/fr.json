@@ -1,0 +1,76 @@
+{
+  "navbar": {
+    "main": "Accueil",
+    "about": "À propos",
+    "products": "Produits",
+    "contact": "Contact"
+  },
+  "hero": {
+    "part1": "Innover dans la transformation durable des produits de la mer",
+    "part2": "Des technologies de congélation avancées pour une qualité et une fraîcheur irréprochables",
+    "part3": "Nous associons innovation, savoir-faire en transformation des produits halieutiques et pratiques écoresponsables pour garantir la fraîcheur, le goût et la durabilité, selon les normes les plus exigeantes du secteur."
+  },
+  "smallAbout": {
+    "title": "À propos de Mercaluz",
+    "part1": "Mercaluz est une entreprise marocaine de confiance, spécialisée dans l’exportation de produits de la mer haut de gamme vers les marchés internationaux.",
+    "part2": "Située à Safi, l’un des plus grands ports de pêche d’Afrique du Nord, Mercaluz propose une large sélection de poissons frais et surgelés provenant de tous les ports marocains. Nos produits respectent les normes internationales en matière de sécurité alimentaire et de durabilité.",
+    "part3": "Grâce à une équipe expérimentée et un contrôle qualité rigoureux de l’approvisionnement jusqu’à l’expédition, Mercaluz assure une transparence totale, une régularité d’approvisionnement et une véritable valeur ajoutée pour ses partenaires en Europe, en Asie, en Afrique, en Amérique et au Moyen-Orient.",
+    "LearnMore": "En savoir plus"
+  },
+  "category": {
+    "title": "Produits",
+    "details": "Détails",
+    "subTitle": "Une large gamme de produits de qualité",
+    "btn1": "catégorie",
+    "FishTypes": "types de poissons",
+    "SeeAll": "Voir tout"
+  },
+  "reasonsWhy": {
+    "title": "Pourquoi choisir Mercaluz",
+    "reasons": {
+      "01": "La qualité est notre priorité. De la sélection quotidienne jusqu’à la livraison, chaque étape est contrôlée pour garantir fraîcheur, goût et standards élevés.",
+      "02": "Nos poissons sont issus de pêcheries marocaines de confiance, selon des pratiques durables et respectueuses de l’environnement marin.",
+      "03": "Nous proposons des produits premium à des prix compétitifs, pour un excellent rapport qualité-prix sans compromis.",
+      "04": "La ponctualité est au cœur de notre engagement. Nous assurons une livraison rapide, sûre et dans les délais, partout dans le monde.",
+      "05": "La satisfaction client nous guide. Nous offrons un service personnalisé, réactif et flexible selon vos besoins spécifiques."
+    }
+  },
+  "contact_us": {
+    "title": "Contactez-nous",
+    "form": {
+      "placeholder_name": "Nom",
+      "placeholder_email": "Votre email",
+      "placeholder_phone": "Numéro de téléphone",
+      "placeholder_msg": "Message",
+      "btn_text": "Envoyer le message"
+    }
+  },
+  "aboutPage": {
+    "introduction": {
+      "part1": "Nous sommes une équipe de professionnels spécialisés dans l’exportation directe de poisson depuis le Maroc.",
+      "part2": "Mercaluz est une entreprise spécialisée dans l’exportation de poissons et de produits de la mer du Maroc vers divers marchés mondiaux. Forts de plusieurs années d’expérience dans le domaine, Mercaluz s’engage à respecter les normes de qualité les plus strictes et à se conformer pleinement aux réglementations internationales."
+    },
+    "whyWeAreBetter": {
+      "title": "Pourquoi sommes-nous meilleurs que les autres ?",
+      "text1": "Il est souvent observé que les fournisseurs locaux marocains ne respectent pas toujours leurs engagements. Chez Mercaluz, nous comprenons combien il est difficile de bâtir une réputation, c’est pourquoi nous vous protégeons, ainsi que vos clients finaux, contre toute mauvaise surprise.",
+      "subTitle": "Qualité des produits",
+      "text2": {
+        "part1": "Contrairement à de nombreuses entreprises locales, nous sommes des vendeurs, pas des intermédiaires. Nous assumons donc de vrais risques (!) et pas seulement des obligations théoriques quant à la qualité des produits livrés.",
+        "part2": "S’il y a un manque de stock du produit souhaité, nous compilerons votre commande auprès de plusieurs fabricants, conformément à toutes vos exigences.",
+        "part3": "Nos experts qualifiés superviseront la réception des marchandises, depuis leur première arrivée pour la production/emballage, jusqu’au contrôle final de la conformité aux spécifications, qualité, quantité, emballage — avant le chargement dans le véhicule de transport."
+      }
+    },
+    "services": {
+      "title": "Services",
+      "part1": "Les clients de Mercaluz reçoivent toujours en premier les dernières offres du marché, ce qui leur permet de gagner du temps et d’obtenir un avantage concurrentiel face à la volatilité du marché.",
+      "part2": "Notre service export exécute rapidement et correctement tous les documents d’expédition, en tenant compte de toutes les exigences des autorités réglementaires nationales.",
+      "part3": "Nous envoyons gratuitement des échantillons à nos clients potentiels et organisons leur visite au Maroc : réservation d’hôtel, transferts aéroport, transport personnel et bien plus encore."
+    },
+    "price": {
+      "title": "Prix",
+      "part1": "Nous proposons des solutions efficaces en augmentant le volume, en réduisant les marges et en négociant des tarifs logistiques plus avantageux. Vous bénéficiez ainsi de prix optimisés à chaque étape.",
+      "part2": "Quelle que soit la quantité de votre commande, nous établirons une offre exclusive pour vous, équivalente à celle proposée par nos concurrents aux plus gros importateurs. Mercaluz propose toujours des prix avantageux, même pour les petits volumes.",
+      "part3": "Nous offrons également un système de remises supplémentaires à nos clients fidèles."
+    }
+  }
+}

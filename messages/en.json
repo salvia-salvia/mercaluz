@@ -1,0 +1,76 @@
+{
+  "navbar": {
+    "main": "Home",
+    "about": "About",
+    "products": "Products",
+    "contact": "Contact"
+  },
+  "hero": {
+    "part1": "Driving Innovation in Sustainable Seafood Processing",
+    "part2": "Using Advanced Freezing Technology for Premium Quality & Freshness",
+    "part3": "We combine cutting-edge freezing and seafood processing solutions with eco-friendly practices to ensure freshness, flavor, and sustainability—meeting the highest industry standards."
+  },
+  "smallAbout": {
+    "title": "About Mercaluz",
+    "part1": "Mercaluz is a trusted Moroccan company specializing in the export of premium-quality seafood to international markets.",
+    "part2": " Located in Safi—one of North Africa’s most renowned fishing ports—Mercalurz sources a wide range of fresh and frozen fish from all major Moroccan ports, ensuring variety, quality, and year-round availability. Our products comply with global food safety and sustainability standards.",
+    "part3": " With a dedicated team and strict quality control processes from sourcing to shipping, Mercaluz ensures consistency, transparency, and long-term value for partners across the globe—including Europe, Asia, Africa, the Americas, and the Middle East.",
+    "LearnMore": "Learn More"
+  },
+  "category": {
+    "title": "Products",
+    "details": "details",
+    "subTitle": " We offer a quality and wide range of goods",
+    "btn1": "category",
+    "FishTypes": "types Of fish",
+    "SeeAll": "See All"
+  },
+  "reasonsWhy": {
+    "title": "The reasons why you should choose us",
+    "reasons": {
+      "01": "We prioritize quality above all. From daily fish selection to final delivery, every stage is carefully controlled to preserve freshness, flavor, and top-tier standards.",
+      "02": "Our fish is ethically sourced from trusted Moroccan fisheries, following sustainable practices that respect marine life and the environment.",
+      "03": "We offer fair pricing without compromising on quality—making premium seafood accessible and reliable.",
+      "04": "Punctuality is our promise. We ensure fast, safe, and on-time delivery for every order, anywhere in the world.",
+      "05": "Client satisfaction drives us. We provide personalized service, fast responses, and a flexible approach tailored to your needs."
+    }
+  },
+  "contact_us": {
+    "title": "Contact us",
+    "form": {
+      "placeholder_name": "name",
+      "placeholder_email": "your email",
+      "placeholder_phone": "phone Number",
+      "placeholder_msg": "message",
+      "btn_text": "send Message"
+    }
+  },
+  "aboutPage": {
+    "introduction": {
+      "part1": "We are a team of professionals specializing in the direct export of fish from Morocco.",
+      "part2": "Mercaluz is a company specialized in exporting fish and seafood products from Morocco to various global markets. With years of experience in the export industry, Mercaluz is committed to the highest standards of quality and full compliance with international regulations."
+    },
+    "whyWeAreBetter": {
+      "title": "Why we are better than others?",
+      "text1": "it can often be obseved that the local Moroccan suuppliers are a bit loose on thier agreements and terms. we, at Mercaluz, understand how hard it is to establish a repuation and we'll protect you and your final customers from any possible 'suprices'.",
+      "subTitle": "Quality of goods",
+      "text2": {
+        "part1": "Unlike many local companies, we are Sellers,not intermediaries, and therefore we carry real risks (!) not just constructive obligations for the quality of the googs we deliver.",
+        "part2": "if there is a shortage in stock of the right product, we will compile your order from several manufacturers in compliance with all Your wishes and requirements.",
+        "part3": " Our qualified experts will monitor the acceptance of goods from the of its first arrival for production/packaging, up to a final check of the conformance of specifications, quality, quantity, packaging - before loading into the transporting vehicle."
+      }
+    },
+    "services": {
+      "title": "Services",
+      "part1": "Mercaluz's customres are always the first to receive the most recent selection of market's proposals, saving their time, which will provide curtain competitive advantage around the market volatility.",
+      "part2": "Our exports department will quickly and correctly execute all shipping documents, taking into account all the niceties and requirements of your national regulatory authorities.",
+      "part3": "We are sending free samples of products to our potential customers and arranging a visit to Morocco, including hotel reservations, airport transfers, personal transport and much more."
+    },
+    "price": {
+      "title": "Price",
+      "part1": "We achieve effective solutions by inceasing the turnover, reducing margins and providing more favorable tariffs for logistics services As a result, you get the prices optimzed through each and every stage.",
+      "part2": "Regradless of the quantum of Your order, we will compile an exclusive offer for You, which will be equal to those our competitors' are offering to the major importers. Mercaluz always has favorable prices even for minimum lots.",
+      "part3": "We also offer a system of additional discounts for our loyal customers."
+    }
+  }
+}
