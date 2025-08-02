@@ -72,5 +72,20 @@
       "part2": "Regradless of the quantum of Your order, we will compile an exclusive offer for You, which will be equal to those our competitors' are offering to the major importers. Mercaluz always has favorable prices even for minimum lots.",
       "part3": "We also offer a system of additional discounts for our loyal customers."
     }
+  },
+  "fish_product": {
+    "description": "description",
+    "specification": {
+      "title": "specification",
+      "part1": "Block Quick Freezing (BQF)",
+      "part2": "BIndividual Quick Freezing (IQF)",
+      "part3": "Individually wrapped packaging (IWP)"
+    },
+    "scientific_name": "scientific name",
+    "fishing_zone": "fishing zone",
+    "fao": "fao",
+    "shelf_life": "shelf life",
+    "month": "month",
+    "submit": "Submit"
   }
 }

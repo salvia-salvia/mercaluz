@@ -72,5 +72,20 @@
       "part2": "Quelle que soit la quantité de votre commande, nous établirons une offre exclusive pour vous, équivalente à celle proposée par nos concurrents aux plus gros importateurs. Mercaluz propose toujours des prix avantageux, même pour les petits volumes.",
       "part3": "Nous offrons également un système de remises supplémentaires à nos clients fidèles."
     }
+  },
+  "fish_product": {
+    "description": "description",
+    "specification": {
+      "title": "spécification",
+      "part1": "Congélation rapide en bloc (BQF)",
+      "part2": "Congélation rapide individuelle (IQF)",
+      "part3": "Emballage individuel sous film (IWP)"
+    },
+    "scientific_name": "nom scientifique",
+    "fishing_zone": "zone de pêche",
+    "fao": "fao",
+    "shelf_life": "durée de conservation",
+    "month": "mois",
+    "submit": "Soumettre"
   }
 }

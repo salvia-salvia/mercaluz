@@ -72,6 +72,20 @@
       "part2": "Independientemente del volumen de tu pedido, elaboraremos una oferta exclusiva para ti, igual a la que ofrecen nuestros competidores a los principales importadores. Mercaluz siempre ofrece precios competitivos incluso para pedidos mínimos.",
       "part3": "También ofrecemos un sistema de descuentos adicionales para nuestros clientes leales."
     }
+  },
+  "fish_product": {
+    "description": "descripción",
+    "specification": {
+      "title": "especificación",
+      "part1": "Congelación rápida en bloque (BQF)",
+      "part2": "Congelación rápida individual (IQF)",
+      "part3": "Empaque individual envuelto (IWP)"
+    },
+    "scientific_name": "nombre científico",
+    "fishing_zone": "zona de pesca",
+    "fao": "fao",
+    "shelf_life": "vida útil",
+    "month": "mes",
+    "submit": "Enviar"
   }
-  
 }

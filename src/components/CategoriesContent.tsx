@@ -1,8 +1,8 @@
 "use client";
 
 import { fishCategories } from "@/constants";
-import { routing } from "@/i18n/routing";
-import { Language, MultiLangText } from "@/types";
+
+import { MultiLangText } from "@/types";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
@@ -35,12 +35,17 @@ export default function CategoriesContent() {
             className="object-cover w-[300px] h-[300px] lg:w-[400px] lg:h-[400px]"
           />
           <div className="absolute -bottom-8   ">
-            <button className="relative mt-8 inline-block px-10 py-2 border border-[#34699a] cursor-pointer text-[#34699a] font-medium overflow-hidden group">
-              <span className="absolute left-0 top-1/2 w-full h-0 bg-[#34699a] z-0 transition-all duration-300 ease-out group-hover:h-full transform -translate-y-1/2"></span>
-              <span className="relative uppercase z-10 group-hover:text-white transition-colors duration-300">
-                {t("btn1")}
-              </span>
-            </button>
+            {" "}
+            <Link
+              href={`/${localeRaw}/products/${fishCategories[selected].id}`}
+            >
+              <button className="relative mt-8 inline-block px-10 py-2 border border-[#34699a] cursor-pointer text-[#34699a] font-medium overflow-hidden group">
+                <span className="absolute left-0 top-1/2 w-full h-0 bg-[#34699a] z-0 transition-all duration-300 ease-out group-hover:h-full transform -translate-y-1/2"></span>
+                <span className="relative uppercase z-10 group-hover:text-white transition-colors duration-300">
+                  {t("btn1")}
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
         <div className="flex items-center lg:gap-26">

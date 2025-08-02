@@ -39,4 +39,4 @@ export type MultiLangText = {
   fr: string;
   es: string;
 };
-export type Categories = "frozen_fish" | "fresh_fish" | "pelagic" | "demersal";
+export type Categories =  "cephalopod" | "pelagic" | "demersal";

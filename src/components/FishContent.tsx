@@ -4,7 +4,6 @@ import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import ContactContent from "./ContactContent";
 
 export default function FishContent({
   category,
@@ -16,16 +15,17 @@ export default function FishContent({
   const localeRaw = useLocale();
   const t = useTranslations("contact_us");
   const tProd = useTranslations("category");
+  const tFishprod = useTranslations("fish_product");
   const locale = localeRaw as keyof MultiLangText;
   const categoryInfo = fishCategories.find((cat) => cat.id == category);
   const productsInfo = products[category];
-  const fishInfo = productsInfo.find((fishI) => fishI.id == fish);
+  const fishInfo = productsInfo.find((fishI) => fishI?.id == fish);
 
   return (
     <div className="flex  flex-col xl:flex-row items-center justify-around mt-52">
       <div>
         <Image
-          className="xl:fixed top-44 left-14 "
+          className="xl:fixed top-44 left-46"
           src={fishInfo?.image || ""}
           width={500}
           height={500}
@@ -44,48 +44,52 @@ export default function FishContent({
           >
             {categoryInfo?.name[locale]}
           </Link>
-          /
-          <span className="font-semibold text-gray-500">
-            {fishInfo?.name[locale]}
-          </span>
+          /<span className="font-semibold text-gray-500">{fishInfo?.name}</span>
         </div>
         <h2 className="text-xl sm:text-3xl 2xl:text-4xl capitalize  font-semibold tracking-widest md:leading-20 px-8 lg:px-0 mb-6  text-gray-800">
-          {fishInfo?.name[locale]}
+          {fishInfo?.name}
         </h2>
         <div className="flex flex-col gap-8 p-3 justify-between ">
           <div>
-            <h3 className="uppercase text-gray-400">descrition :</h3>
-            <p className="lg:text-xl font-light">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
-              earum ipsum dicta doloremque atque necessitatibus doloribus
-              perferendis expedita repellat accusantium temporibus maxime
-              deleniti alias a porro, eaque illo beatae et.
-            </p>
+            <h3 className="uppercase text-gray-400">
+              {tFishprod("description")} :
+            </h3>
+            <p className="lg:text-xl font-light">{fishInfo?.desc[locale]}</p>
           </div>
           <hr />
           <div>
-            <h3 className="uppercase text-gray-400">specification :</h3>
+            <h3 className="uppercase text-gray-400">
+              {tFishprod("specification.title")} :
+            </h3>
             <ul className="lg:text-xl font-light">
-              <li>Block Quick Freezing (BQF)</li>
-              <li>Individual Quick Freezing (IQF)</li>
-              <li>Individually wrapped packaging (IWP)</li>
+              <li>{tFishprod("specification.part1")}</li>
+              <li>{tFishprod("specification.part2")}</li>
+              <li>{tFishprod("specification.part3")}</li>
             </ul>
           </div>
           <hr />
           <div>
-            <h3 className="uppercase text-gray-400">scientifc name:</h3>
-            <p className="lg:text-xl font-light">{fishInfo?.name[locale]}</p>
+            <h3 className="uppercase text-gray-400">
+              {tFishprod("scientific_name")}:
+            </h3>
+            <p className="lg:text-xl font-light">{fishInfo?.scientifcName}</p>
           </div>
 
           <hr />
           <div>
-            <h3 className="uppercase text-gray-400">fishing zone:</h3>
-            <p className="lg:text-xl font-light uppercase">fao 34</p>
+            <h3 className="uppercase text-gray-400">
+              {tFishprod("fishing_zone")}:
+            </h3>
+            <p className="lg:text-xl font-light uppercase">
+              {tFishprod("fao")} 34
+            </p>
           </div>
           <hr />
           <div>
-            <h3 className="uppercase text-gray-400">shelf life:</h3>
-            <p className="lg:text-xl font-light">18 month</p>
+            <h3 className="uppercase text-gray-400">
+              {tFishprod("shelf_life")}:
+            </h3>
+            <p className="lg:text-xl font-light">18 {tFishprod("month")}</p>
           </div>
         </div>
         <div className="w-full  flex justify-center items-center mt-20 p-8 bg-white">
@@ -134,7 +138,7 @@ export default function FishContent({
               type="submit"
               className=" text-sm w-[200px]  py-3 md:py-4 px-4 font-medium  uppercase bg-[#34699a] text-white"
             >
-              Submit
+              {tFishprod("submit")}
             </button>
           </form>
         </div>
