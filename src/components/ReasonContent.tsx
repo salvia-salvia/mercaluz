@@ -11,7 +11,7 @@ export default function ReasonContent() {
     { id: "05" },
   ];
   return (
-    <div className="max-w-[1500px] mx-auto md:pl-7 px-8">
+    <div className="max-w-[1500px] mx-auto font-open-sans md:pl-7 px-8">
       <h2 className="text-xl max-w-3xl  font-semibold tracking-widest md:leading-20 sm:text-3xl 2xl:text-5xl  mb-6  lg:mb-22  text-gray-800">
         {t("title")}
       </h2>{" "}
@@ -22,7 +22,7 @@ export default function ReasonContent() {
               <span className="text-3xl font-semibold text-[#34699a] w-12 flex-shrink-0">
                 {id}
               </span>
-              <p className="text-gray-600 text-lg leading-relaxed">
+              <p className="text-gray-600 md:text-lg leading-relaxed">
                 {t(`reasons.${id}`)}
               </p>
             </li>

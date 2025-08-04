@@ -16,12 +16,12 @@ export default function CategoriesContent() {
 
   const [selected, setSelected] = useState(0);
   return (
-    <div className="w-full min-h-screen  flex flex-col items-center">
-      <div className="w-full max-w-7xl px-8 pb-20 lg:pb-42 mx-auto">
-        <h2 className="text-2xl sm:text-3xl 2xl:text-5xl  font-semibold    text-gray-800">
+    <div className="w-full min-h-screen font-open-sans flex flex-col items-center">
+      <div className="w-full max-w-7xl px-8 pb-20  mx-auto">
+        <h2 className="text-xl max-w-3xl  font-semibold tracking-widest md:leading-20 sm:text-3xl 2xl:text-5xl  mb-2">
           {t("title")}
         </h2>
-        <p className="text-gray-800 md:text-lg leading-relaxed">
+        <p className="text-gray-800 md:text-lg leading-relaxed ">
           {t("subTitle")}
         </p>
       </div>
@@ -103,7 +103,7 @@ export default function CategoriesContent() {
         </div>
       </div>
       {/* all products btn */}
-      <div className="relative  flex sm:hidden justify-center">
+      <div className="relative mt-20 flex sm:hidden justify-center">
         <div className="absolute  z-20 bottom-20 mx-auto">
           <div className="text-center text-xl mb-3">
             <span className="">80+</span>

@@ -7,7 +7,7 @@ export default function AboutContent() {
   return (
     <section
       id="about"
-      className=" flex gap-20  items-center min-h-screen py-20 px-6"
+      className=" flex gap-20  font-open-sans items-center min-h-screen py-20 px-6"
     >
       <Image
         src={`/img/map.png`}
@@ -17,7 +17,7 @@ export default function AboutContent() {
         height={400}
       />
       <div className="max-w-2xl md:pl-7">
-        <h2 className="text-xl sm:text-3xl 2xl:text-5xl  font-semibold mb-6  text-gray-800">
+        <h2 className="text-xl max-w-3xl  font-semibold tracking-widest md:leading-20 sm:text-3xl 2xl:text-5xl  mb-6">
           {t("title")}
         </h2>
         <p className="text-gray-600 md:text-lg leading-relaxed">

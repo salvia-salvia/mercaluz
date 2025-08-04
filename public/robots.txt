@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://mercaluz.net
+
+# Sitemaps
+Sitemap: https://mercaluz.net/sitemap.xml

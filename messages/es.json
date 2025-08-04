@@ -1,4 +1,6 @@
 {
+  "AllRight": "Todos los derechos reservados",
+  "morocco": "Marruecos",
   "navbar": {
     "main": "Inicio",
     "about": "Sobre nosotros",
@@ -43,6 +45,11 @@
       "placeholder_phone": "número de teléfono",
       "placeholder_msg": "mensaje",
       "btn_text": "enviar mensaje"
+    },
+    "info": {
+      "address": "dirección",
+      "phone": "teléfono",
+      "contactMedia": "contacto en redes sociales"
     }
   },
   "aboutPage": {

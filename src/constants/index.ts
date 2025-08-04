@@ -2,7 +2,7 @@ export const navbarRoutes = [
   { name: "navbar.main", link: "/" },
   { name: "navbar.about", link: "/about" },
   { name: "navbar.products", link: "/products" },
-  { name: "navbar.contact", link: "/contact" },
+  { name: "navbar.contact", link: "#contact" },
 ];
 export const fishCategories = [
   {

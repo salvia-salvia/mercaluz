@@ -44,10 +44,10 @@ export default function LanguageSelector() {
   }, [isOpen]);
 
   return (
-    <div className={`relative `} ref={dropdownRef}>
+    <div className={`relative`} ref={dropdownRef}>
       {/* Button */}
       <button
-        className="flex items-center justify-between gap-2 rounded-lg w-28 py-3"
+        className="flex items-center justify-between cursor-pointer gap-2 rounded-lg w-28 py-3"
         onClick={() => setIsOpen(!isOpen)}
       >
         <div className="flex items-center gap-3">

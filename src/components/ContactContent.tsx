@@ -9,9 +9,9 @@ export default function ContactContent() {
     e.preventDefault();
   };
   return (
-    <div className="flex flex-col items-center lg:items-start  justify-center max-w-7xl mx-auto min-h-screen ">
+    <div className="flex flex-col items-center lg:items-start  font-open-sans  justify-center max-w-7xl mx-auto min-h-screen ">
       {" "}
-      <h2 className="text-xl sm:text-3xl 2xl:text-5xl  font-semibold tracking-widest md:leading-20 px-8 lg:px-0 mb-6  text-gray-800">
+      <h2 className="text-xl w-full sm:text-3xl 2xl:text-5xl  font-semibold tracking-widest md:leading-20 px-8 lg:px-0 mb-6  text-gray-800">
         {t("title")}
       </h2>
       <form
@@ -24,14 +24,14 @@ export default function ContactContent() {
             placeholder={`${t("form.placeholder_name")} *`}
             type="text"
             name="name"
-            className="border-b-2 focus:outline-none w-full  py-3 focus:border-[#34699a] placeholder:text-sm focus:placeholder:text-white"
+            className="border-b-2 focus:outline-none w-full  py-3 focus:border-[#34699a]  focus:placeholder:text-white"
             required
           />
           <input
             placeholder={`${t("form.placeholder_email")} *`}
             type="email"
             name="email"
-            className="border-b-2 focus:outline-none w-full py-3 focus:border-[#34699a] placeholder:text-sm focus:placeholder:text-white"
+            className="border-b-2 focus:outline-none w-full py-3 focus:border-[#34699a] focus:placeholder:text-white"
             required
           />
         </div>
@@ -39,7 +39,7 @@ export default function ContactContent() {
           placeholder={`${t("form.placeholder_phone")} *`}
           type="text"
           name="phone"
-          className="border-b-2 focus:outline-none w-[310px] sm:w-[400px] md:w-[600px] lg:w-[800px] py-3 focus:border-[#34699a] placeholder:text-sm focus:placeholder:text-white"
+          className="border-b-2 focus:outline-none w-[310px] sm:w-[400px] md:w-[600px] lg:w-[800px] py-3 focus:border-[#34699a] focus:placeholder:text-white"
           required
         />
 

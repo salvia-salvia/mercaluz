@@ -32,7 +32,7 @@ export default function Header({
 
   return (
     <header
-      className={` ${className} fixed animate__animated  animate__fadeInDownBig top-0 w-full py-2 z-50 transition-colors duration-300 ${
+      className={` ${className} font-open-sans fixed animate__animated  animate__fadeInDownBig top-0 w-full py-2 z-50 transition-colors duration-300 ${
         scrolled
           ? "bg-white shadow-md"
           : `bg-transparent  ${
@@ -51,7 +51,9 @@ export default function Header({
           showMobileNavbar={showMobileNavbar}
           setShowMobileNavbar={setShowMobileNavbar}
         />
-        <nav className="hidden md:flex items-center gap-6 lg:gap-10  lg:text-lg font-light ">
+        <nav
+          className={`hidden md:flex items-center gap-6 lg:gap-10  lg:text-lg`}
+        >
           {navbarRoutes.map((route, i) => {
             const fullPath = `/${locale}${route.link}`;
             const cleanFullPath = fullPath.endsWith("/")
@@ -64,7 +66,7 @@ export default function Header({
                 key={i}
                 href={fullPath}
                 className={`relative capitalize group ${
-                  isActive ? "font-bold" : " "
+                  isActive ? "font-extrabold text-xl" : " "
                 }`}
               >
                 {t(route.name)}
@@ -78,14 +80,16 @@ export default function Header({
           })}
         </nav>
         <div className=" mr-28 w-[100px] lg:w-[200px] lg:mr-42 ">
-          <Image
-            alt="logo"
-            src={`${
-              scrolled || isProductPage ? "/logo.svg" : "/white_logo.svg"
-            }`}
-            width={200}
-            height={70}
-          />
+          <Link href={`/${locale}`}>
+            <Image
+              alt="logo"
+              src={`${
+                scrolled || isProductPage ? "/logo.svg" : "/white_logo.svg"
+              }`}
+              width={200}
+              height={70}
+            />
+          </Link>
         </div>
 
         <div

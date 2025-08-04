@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://mercaluz.net/sitemap.xml

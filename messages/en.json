@@ -1,4 +1,6 @@
 {
+  "AllRight": "All Rights reserved",
+  "morocco": "Morocco",
   "navbar": {
     "main": "Home",
     "about": "About",
@@ -43,6 +45,11 @@
       "placeholder_phone": "phone Number",
       "placeholder_msg": "message",
       "btn_text": "send Message"
+    },
+    "info": {
+      "address": "address",
+      "phone": "phone",
+      "contactMedia": "contact in solcial media"
     }
   },
   "aboutPage": {

@@ -31,7 +31,7 @@ export default function MobileNavbar({
           className="w-[30px] h-[30px]"
         />
       </div>
-      <nav className="flex flex-col capitalize  h-screen items-center justify-center  gap-8  text-4xl  ">
+      <nav className="flex flex-col capitalize  h-screen items-center justify-center  gap-8  text-3xl  ">
         {navbarRoutes.map((route, i) => {
           const fullPath = `/${locale}${route.link}`;
           const cleanFullPath = fullPath.endsWith("/")
