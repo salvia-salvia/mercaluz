@@ -75,19 +75,20 @@ export default function Home() {
         id="contact"
         className="max-w-[1600px] mx-auto flex flex-col-reverse xl:flex-row justify-around  items-center mt-[100px] min-h-screen md:px-20 "
       >
-        <div className=" flex flex-col gap-12 font-open-sans flex-1 pb-20 ">
+        <div className=" flex flex-col gap-12 font-open-sans flex-1 pb-20 md:pb-0 ">
           <div className="flex items-center gap-8">
             <Image
               src={"/icons/location-icon.svg"}
               width={60}
               height={60}
               alt="location"
+              className="w-[40px] md:w-[60px]"
             />
             <div className="">
               <h2 className="uppercase text-[#8f8f8f] py-2 font-light">
                 {tContact("info.address")}:
               </h2>
-              <p className="text-xl">Safi, Morocco</p>
+              <p className="md:text-xl">Safi, Morocco</p>
             </div>
           </div>
           <div className="flex items-center gap-8">
@@ -95,13 +96,14 @@ export default function Home() {
               src={"/icons/phone-call.svg"}
               width={60}
               height={60}
-              alt="location"
+              alt="phone"
+              className="w-[40px] md:w-[60px]"
             />
             <div>
               <h2 className="uppercase text-[#8f8f8f] py-2 font-light">
                 {tContact("info.phone")}:
               </h2>
-              <p className="text-xl">+212 465 43 55 23</p>
+              <p className="md:text-xl">+212 465 43 55 23</p>
             </div>
           </div>
           <div>

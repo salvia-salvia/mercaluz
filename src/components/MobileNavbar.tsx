@@ -1,5 +1,5 @@
 import { navbarRoutes } from "@/constants";
-import { Globe, X } from "lucide-react";
+import { X } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import React from "react";
@@ -28,7 +28,7 @@ export default function MobileNavbar({
         <LanguageSelector />
         <X
           onClick={() => setShowMobileNavbar(false)}
-          className="w-[30px] h-[30px]"
+          className="w-[30px] h-[30px] cursor-pointer"
         />
       </div>
       <nav className="flex flex-col capitalize  h-screen items-center justify-center  gap-8  text-3xl  ">

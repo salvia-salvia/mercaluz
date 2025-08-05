@@ -16,6 +16,7 @@ export default function FishContent({
   const t = useTranslations("contact_us");
   const tProd = useTranslations("category");
   const tFishprod = useTranslations("fish_product");
+  const tLinkTitle = useTranslations("linkTitle");
   const locale = localeRaw as keyof MultiLangText;
   const categoryInfo = fishCategories.find((cat) => cat.id == category);
   const productsInfo = products[category];
@@ -25,21 +26,27 @@ export default function FishContent({
     <div className="flex  flex-col xl:flex-row items-center justify-around mt-52">
       <div>
         <Image
-          className="xl:fixed top-44 left-46"
+          className="xl:fixed top-44 left-46 w-[320px] md:w-[500px]"
           src={fishInfo?.image || ""}
           width={500}
           height={500}
-          alt="fish"
+          alt={fishInfo?.name || "fish"}
         />
       </div>
-      <main className=" z-10 w-3xl bg-gray-50 p-8">
-        <div className="uppercase  text-gray-400 text-sm">
+      <main className=" z-10 max-w-3xl bg-gray-50  ">
+        <div className="uppercase whitespace-nowrap text-gray-400 text-sm p-3">
           <Link className="hover:underline" href={`/${locale}/products`}>
             {tProd("title")}
           </Link>
           /
           <Link
-            href={`/${locale}/products/${categoryInfo?.name[locale]}`}
+            href={`/${locale}/products/${categoryInfo?.id}`}
+            title={`${tLinkTitle("viewProductscategory")} ${
+              categoryInfo?.name[locale]
+            }`}
+            aria-label={`${tLinkTitle("viewProductscategory")} ${
+              categoryInfo?.name[locale]
+            }`}
             className=" hover:underline"
           >
             {categoryInfo?.name[locale]}
@@ -92,10 +99,10 @@ export default function FishContent({
             <p className="lg:text-xl font-light">18 {tFishprod("month")}</p>
           </div>
         </div>
-        <div className="w-full  flex justify-center items-center mt-20 p-8 bg-white">
+        <div className="w-full  flex justify-center items-center mt-20   bg-white">
           {" "}
-          <form className="w-full flex flex-col items-center lg:items-start gap-10 px-8 lg:px-0 mt-7">
-            <div className="w-[310px] sm:w-[400px] md:w-[600px]   flex flex-col md:flex-row gap-10 items-center justify-center">
+          <form className="w-full flex flex-col items-center lg:items-start gap-10 lg:px-0 mt-7">
+            <div className="w-[300px] sm:w-[400px] md:w-[600px]   flex flex-col md:flex-row gap-10 items-center justify-center">
               <input
                 placeholder={`${t("form.placeholder_name")} *`}
                 type="text"
@@ -111,7 +118,7 @@ export default function FishContent({
                 required
               />
             </div>
-            <div className="w-[310px] sm:w-[400px] md:w-[600px]   flex flex-col md:flex-row gap-10 items-center justify-center">
+            <div className="w-[300px] sm:w-[400px] md:w-[600px]   flex flex-col md:flex-row gap-10 items-center justify-center">
               <input
                 placeholder={`${t("form.placeholder_phone")} *`}
                 type="text"

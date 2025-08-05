@@ -25,7 +25,7 @@ export default function Header({
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
     };
-
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -100,7 +100,7 @@ export default function Header({
           {" "}
           <MenuIcon
             onClick={() => setShowMobileNavbar(true)}
-            className="w-[30px] h-[30px] "
+            className="w-[30px] h-[30px] cursor-pointer"
           />
         </div>
 

@@ -1,6 +1,10 @@
 {
   "AllRight": "Tous droits réservés",
   "morocco": "Maroc",
+  "linkTitle": {
+    "viewProductscategory": "Voir les produits de la catégorie",
+    "viewProduct": "Voir le produit"
+  },
   "navbar": {
     "main": "Accueil",
     "about": "À propos",

@@ -1,7 +1,6 @@
-
+import { Metadata } from "next";
 import "./globals.css";
 
- 
 import { Open_Sans } from "next/font/google";
 
 const openSans = Open_Sans({
@@ -10,7 +9,11 @@ const openSans = Open_Sans({
   variable: "--font-open-sans",
   display: "swap",
 });
-
+export const metadata: Metadata = {
+  icons: {
+    icon: "/logo.svg",
+  },
+};
 export default function RootLayout({
   children,
 }: Readonly<{

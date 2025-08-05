@@ -10,6 +10,7 @@ import { useState } from "react";
 
 export default function CategoriesContent() {
   const t = useTranslations("category");
+  const tLinkTitle = useTranslations("linkTitle");
   const localeRaw = useLocale();
 
   const locale = localeRaw as keyof MultiLangText;
@@ -37,7 +38,13 @@ export default function CategoriesContent() {
           <div className="absolute -bottom-8   ">
             {" "}
             <Link
-              href={`/${localeRaw}/products/${fishCategories[selected].id}`}
+              href={`/${localeRaw}/products/${fishCategories[selected].id} `}
+              title={`${tLinkTitle("viewProductscategory")} ${
+                fishCategories[selected].name[locale]
+              }`}
+              aria-label={`${tLinkTitle("viewProductscategory")} ${
+                fishCategories[selected].name[locale]
+              }`}
             >
               <button className="relative mt-8 inline-block px-10 py-2 border border-[#34699a] cursor-pointer text-[#34699a] font-medium overflow-hidden group">
                 <span className="absolute left-0 top-1/2 w-full h-0 bg-[#34699a] z-0 transition-all duration-300 ease-out group-hover:h-full transform -translate-y-1/2"></span>
@@ -50,7 +57,7 @@ export default function CategoriesContent() {
         </div>
         <div className="flex items-center lg:gap-26">
           <div className="absolute  ml-[10px] bg-gray-400 w-[1px] h-full max-h-[360px]"></div>
-          {/* category list */}
+
           <ul className="flex flex-col gap-8">
             {fishCategories.map((cat, idx) => (
               <li
@@ -58,14 +65,12 @@ export default function CategoriesContent() {
                 onClick={() => setSelected(idx)}
                 className="flex items-center   cursor-pointer group"
               >
-                {/* النقطة */}
                 <span
                   className={`w-5 h-5 rounded-full mr-4 
                 ${selected === idx ? "border-1  border-gray-400" : "bg-white"}
                 transition-colors duration-300`}
                 ></span>
 
-                {/* الاسم */}
                 <span
                   className={`text-lg font-medium transition-colors whitespace-nowrap duration-300
                 ${selected === idx ? "text-[#34699a]" : "text-gray-800 ml-8"}`}
