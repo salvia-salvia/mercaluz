@@ -25,7 +25,7 @@ export const fishCategories = [
   },
   {
     id: "cephalopod",
-    image: "/img/fish/CALAMAR.png",
+    image: "/img/fish/calamar.png",
     name: {
       en: "Cephalopods",
       fr: "Céphalopodes",
@@ -37,7 +37,7 @@ export const products = {
   cephalopod: [
     {
       id: "CALAMAR",
-      image: "/img/fish/CALAMAR.png",
+      image: "/img/fish/calamar.png",
       name: "CALAMAR",
       desc: {
         en: "European squid (Loligo vulgaris) is a fast-swimming cephalopod with tender white meat, widely used in Mediterranean and Atlantic cuisines. Its delicate taste makes it ideal for grilling, frying, or stewi",
